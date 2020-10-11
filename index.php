@@ -9,21 +9,22 @@ session_start();
 
 //////gyvuno generavimas
 if(isset($_SESSION)){
-    $pet = new Pet($names[array_rand($names)],array_rand($rusislaikas),array_rand($category));
-    //$_SESSION['category']=$pet->category;
     $_SESSION['category']=$category;
-    $_SESSION['life']=$rusislaikas;
+    $_SESSION['life']=$rushislaikas;
 }
 
 ////// priskirimas kategorijai
 foreach ($_SESSION['category'] as $key => $value) {
+    $pet = new Pet($names[array_rand($names)],array_rand($rushislaikas),array_rand($category));
     if ($key=$pet->category){
         array_push($_SESSION['category'][$key], $pet);
+        echo '<br>';
+        echo '<br>';
     //break;
     }
 }
 
-//echo count($_SESSION['category']);
+//var_dump($_SESSION['life']);
 echo '<br>';
 //var_dump($_SESSION['category']['reptiles']);
 echo '<br>';
@@ -36,7 +37,7 @@ var_dump($_SESSION);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mainnnnnnnnn.css">
     <title>Document</title>
 </head>
 <body>
