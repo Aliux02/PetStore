@@ -1,0 +1,12 @@
+<?php
+$rusislaikas=[
+    'kate'=>'3',
+    'suo'=>'4',
+    'varna'=>'8',
+    'kanarele'=>'3',
+    'pitonas'=>'6',
+    'tritonas'=>'5',
+    'karpis'=>'5',
+    'karsis'=>'10'
+    ]
+?>
