@@ -1,5 +1,5 @@
 
-
+<?php include "names.php"?>
 <?php
 
 class Pet{

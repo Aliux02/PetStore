@@ -1,4 +1,5 @@
 <?php include "category.php" ?>
+<?php include "names.php" ?>
 <?php include "rusislaikas.php" ?>
 <?php require __DIR__."/Pet.php"?>
 
@@ -6,7 +7,7 @@
 session_start();
 //session_unset();
 if(isset($_SESSION)){
-    $pet = new Pet('ilgakojis','gandras','birds');
+    $pet = new Pet($names[array_rand($names,1)],'varna','birds');
     $_SESSION['category']=$pet->category;
     $_SESSION['category']=$pet;
     $_SESSION['life']=$rusislaikas;
@@ -19,16 +20,16 @@ if(isset($_SESSION)){
 }*/
 
 
-var_dump($_SESSION['category']);
+//var_dump($_SESSION['category']);
 echo '<br>';
-var_dump($_SESSION);
+//var_dump($_SESSION);
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mainnnnnn.css">
+    <link rel="stylesheet" href="mainnnn.css">
     <title>Document</title>
 </head>
 <body>
