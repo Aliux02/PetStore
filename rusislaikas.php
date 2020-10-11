@@ -7,6 +7,6 @@ $rusislaikas=[
     'pitonas'=>'6',
     'tritonas'=>'5',
     'karpis'=>'5',
-    'karsis'=>'10'
+    'lydeka'=>'10'
     ]
 ?>
