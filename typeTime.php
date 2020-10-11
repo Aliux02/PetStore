@@ -1,5 +1,5 @@
 <?php
-$rushislaikas=[
+$typeTime=[
     'kate'=>'3',
     'suo'=>'4',
     'varna'=>'8',
